@@ -52,6 +52,29 @@ tracing.start({
     exporter: new jaeger.JaegerTraceExporter(jaegerOptions)
 })
 ```
+- You can see additional data (that is B3 tracing) included in the respose as well.
+
+```
+{
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {},
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "close",
+    "Host": "httpbin.org",
+    "User-Agent": "axios/0.18.0",
+    "X-B3-Sampled": "1",
+    "X-B3-Spanid": "37de44f9d8008fa5",
+    "X-B3-Traceid": "5ef26a600e4c4b8fbbc75eb79a196f40"
+  },
+  "json": null,
+  "method": "GET",
+  "origin": "124.121.216.122",
+  "url": "https://httpbin.org/anything"
+}
+```
 
 - Open `localhost:16686`, select your service and click `Find Traces`.
 
