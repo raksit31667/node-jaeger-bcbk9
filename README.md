@@ -14,7 +14,7 @@ Barcamp Bangkhen #9 - Microservice Tracing with Jaeger hosted by [whs](https://g
 
 - Install Jaeger by running pre-built Jaeger Docker image with this command line:
 
-```
+```shell
 docker run -d --name jaeger \
   -e COLLECTOR_ZIPKIN_HTTP_PORT=9411 \
   -p 5775:5775/udp \
@@ -29,13 +29,13 @@ docker run -d --name jaeger \
 
 - Install Opencensus dependencies into package.json:
 
-```
+```shell
 npm i @opencensus/exporter-jaeger @opencensus/nodejs @opencensus/propagation-b3
 ```
 
 - Add these lines into your main file (default should be `index.js`)
 
-```
+```javascript
 const tracing = require('@opencensus/nodejs')
 const propagation = require('@opencensus/propagation-b3')
 const jaeger = require('@opencensus/exporter-jaeger')
