@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@opencensus/exporter-jaeger": "0.0.7",
+    "@opencensus/exporter-jaeger": "0.0.18",
     "@opencensus/nodejs": "0.0.7",
     "@opencensus/propagation-b3": "0.0.7",
     "axios": "^0.18.0",
