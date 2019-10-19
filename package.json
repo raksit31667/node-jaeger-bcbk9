@@ -11,7 +11,7 @@
   "dependencies": {
     "@opencensus/exporter-jaeger": "0.0.7",
     "@opencensus/nodejs": "0.0.7",
-    "@opencensus/propagation-b3": "0.0.7",
+    "@opencensus/propagation-b3": "0.0.18",
     "axios": "^0.18.0",
     "express": "^4.16.4"
   }
